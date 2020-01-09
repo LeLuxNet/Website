@@ -1,0 +1,9 @@
+extend layout
+block content
+  h1 #{name}
+  each val in [{"id": "matrix", "url": "https://matrix.to/#/"}, {"id": "twitter", "url": "https://twitter.com/"}]
+    -var id = contact[val.id]
+    -if (id)
+      div.account
+        object(data='/images/' + val.id +'_logo.svg' type='image/svg+xml')
+        a(href=val.url + id) #{id}

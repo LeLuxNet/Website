@@ -1,0 +1,17 @@
+{
+  "people": {
+    "ginnythecat": {
+      "name": "ginnyTheCat",
+      "contact": {
+        "matrix": "@ginnythecat:lelux.net",
+        "twitter": "@ginnyTheCar"
+      }
+    },
+    "neo": {
+      "name": "Neo",
+      "contact": {
+        "matrix": "@neo:lelux.net"
+      }
+    }
+  }
+}
