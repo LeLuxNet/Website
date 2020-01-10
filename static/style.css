@@ -88,11 +88,9 @@ header p {
   display: none;
 }
 
-.account>object {
-  height: 30px;
-  width: 70px;
-}
-
-.account>a {
-  color: white;
+footer {
+  position: absolute;
+  bottom: -10px;
+  font-size: 10px;
+  color: #777;
 }
