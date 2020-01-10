@@ -13,7 +13,6 @@ app.get('/', function(req, res) {
 
 app.get('/people/:person', function(req, res) {
   var person = data.people[req.params.person];
-  person.filter
   res.render('people', person);
 });
 

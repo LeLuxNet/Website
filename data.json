@@ -4,13 +4,15 @@
       "name": "ginnyTheCat",
       "contact": {
         "matrix": "@ginnythecat:lelux.net",
+        "github": "ginnyTheCat",
         "twitter": "@ginnyTheCar"
       }
     },
     "neo": {
       "name": "Neo",
       "contact": {
-        "matrix": "@neo:lelux.net"
+        "matrix": "@neo:lelux.net",
+        "github": "neo-leluxnet"
       }
     }
   }
