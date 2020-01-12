@@ -1,9 +1,12 @@
 extend layout
 block content
   h1 #{name}
-  each val in [{"id": "matrix", "url": "https://matrix.to/#/"}, {"id": "github", "url": "https://github.com/"}, {"id": "twitter", "url": "https://twitter.com/"}]
-    -var id = contact[val.id]
-    -if (id)
+  mixin service(id, url)
+    -var cid = contact[id]
+    -if (cid)
       div.account
-        object(data='/images/' + val.id +'_logo.svg' type='image/svg+xml')
-        a(href=val.url + id) #{id}
+        object(data='/images/' + id +'_logo.svg' type='image/svg+xml')
+        a(href=url + cid) #{cid}
+  +service("matrix", "https://matrix.to/#/")
+  +service("github", "https://github.com/")
+  +service("twitter", "https://twitter.com/")

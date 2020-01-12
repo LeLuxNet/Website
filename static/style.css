@@ -64,6 +64,9 @@ body {
   background-color: var(--back-color);
   color: var(--text-color);
   font-family: var(--normal-font);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 header {
@@ -88,9 +91,22 @@ header p {
   display: none;
 }
 
-footer {
-  position: absolute;
-  bottom: -10px;
-  font-size: 10px;
-  color: #777;
+main {
+  flex: 1;
+}
+
+footer {}
+
+.account>object {
+  height: 30px;
+  width: 70px;
+}
+
+a {
+  color: white;
+}
+
+main {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

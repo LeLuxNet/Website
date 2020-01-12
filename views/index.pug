@@ -1,6 +1,29 @@
 extend layout
-block content
+block pre-content
   header
     h1 LeLuxNet
-  main
-    p(style="text-align:center;margin-top:15px") hier kommt noch was
+block content
+  div(style="text-align:center;")
+    h2 Welcome to the LeLuxNet Website
+    p Put some kind of welcome text here nobody cares about
+
+    h2 Our projects
+    p: a(href="https://numero.lelux.net") Numero
+    p Description of Numero
+    p: a(href="https://github.com/leluxnet/shelly") Shelly
+    p Description of Shelly
+
+    h2 By us hosted applications
+    p
+    a(href="https://matrix.lelux.net") Matrix
+    |
+    | aka Riot
+    p: a(href="https://bitwarden.lelux.net") Bitwarden
+    h2 Do you need help?
+    p
+    | Just join our 
+    a(href="https://matrix.org") Matrix
+    |
+    | support room
+    |
+    a(href="https://matrix.to/#/#help:lelux.net") #support:lelux.net
