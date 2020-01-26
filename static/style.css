@@ -102,11 +102,12 @@ footer {}
   width: 70px;
 }
 
-a {
-  color: white;
-}
-
 main {
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: left;
+}
+
+section {
+  margin-top: 10px;
 }
