@@ -5,28 +5,43 @@ block pre-content
 block content
   div(style="text-align:center;")
     h2 Welcome to the LeLuxNet Website
-    p Put some kind of welcome text here nobody cares about
-
-    h2 Our projects
-    p: a(href="https://numero.lelux.net") Numero
-    p Description of Numero
-    p: a(href="https://github.com/leluxnet/shelly") Shelly
-    p Description of Shelly
-
-    h2 By us hosted applications
-    p
-    a(href="https://matrix.lelux.net") Matrix
+    p LeLuxNet is a small group of programmers.
+    | We publish some software. Which software? Look in the
     |
-    | aka Riot
-    p: a(href="https://bitwarden.lelux.net") Bitwarden
-    h2 Do you need help?
-    p
-    | Just join our 
-    a(href="https://matrix.org") Matrix
+    a(href="#projects") projects
     |
-    | support room
-    |
-    a(href="https://matrix.to/#/#help:lelux.net") #support:lelux.net
-    h2 People
-    p: a(href="people/ginnythecat") ginnyTheCat
-    p: a(href="people/neo") Neo
+    | section below.
+    section(id="projects")
+      h3 Our projects
+      section
+        p: a(href="https://numero.lelux.net") Numero
+        p Get information about numbers with Numero
+      section
+        p: a(href="https://github.com/leluxnet/shelly") Shelly
+        p The cross-platform shell
+    section
+      h3 Stuff that we host
+      section
+        p 
+        | The decentralised chat-protocol
+        |
+        a(href="https://matrix.lelux.net/") Matrix
+      section
+        p
+        | The free-and-easy-to-use, safe password manager
+        |
+        a(href="https://bitwarden.lelux.net") Bitwarden
+    section
+      h3 Do you need help?
+      p
+      | Just join our 
+      a(href="https://matrix.org/") Matrix
+      |
+      | support room
+      |
+      a(href="https://matrix.to/#/#support:lelux.net") #support:lelux.net
+      |
+      | or read our
+      |
+      a(href="https://wiki.lelux.net/") Wiki
+      |.

@@ -103,10 +103,15 @@ footer {}
 }
 
 a {
-  color: white;
+  color: var(--text-color);
 }
 
 main {
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: left;
+}
+
+section {
+  margin-top: 10px;
 }
