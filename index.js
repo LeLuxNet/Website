@@ -8,11 +8,14 @@ app.set('view engine', 'pug');
 app.use('/', express.static('static'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {
+    title: "Home"
+  });
 });
 
 app.get('/people/:person', function(req, res) {
   var person = data.people[req.params.person];
+  person.title = person.name;
   res.render('people', person);
 });
 
