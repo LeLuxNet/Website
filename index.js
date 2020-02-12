@@ -8,15 +8,22 @@ app.set('view engine', 'pug');
 app.use('/', express.static('static'));
 
 app.get('/', function(req, res) {
-  res.render('index', {
-    title: "Home"
-  });
+  var realtimeData = data;
+  realtimeData.title = "Home";
+  res.render('index', realtimeData);
 });
 
 app.get('/people/:person', function(req, res) {
-  var person = data.people[req.params.person];
-  person.title = person.name;
-  res.render('people', person);
+  var realtimeData = data;
+  realtimeData.selPerson = data.people[req.params.person];
+  realtimeData.title = realtimeData.selPerson.name;
+  res.render('people', realtimeData);
+});
+
+app.get('/imprint', function(req, res) {
+  var realtimeData = data;
+  realtimeData.title = "Imprint";
+  res.render('imprint', realtimeData);
 });
 
 app.listen(80, function() {

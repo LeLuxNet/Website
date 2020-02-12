@@ -1,12 +1,15 @@
 extend layout
 block content
-  h1 #{name}
-  mixin service(id, url)
-    -var cid = contact[id]
+  h1 #{selPerson.name}
+  mixin account(id, url)
+    -var cid = selPerson.contact[id]
     -if (cid)
-      div.account
-        object(data='/images/' + id +'_logo.svg' type='image/svg+xml')
-        a(href=url + cid) #{cid}
-  +service("matrix", "https://matrix.to/#/")
-  +service("github", "https://github.com/")
-  +service("twitter", "https://twitter.com/")
+    a(href=url + cid)
+      .account
+        svg(height="30" width="30" viewBox="0 0 24 24")
+          path(fill="#fff" d=logos[id])
+  h2 Contact
+  .accounts
+    +account("github", "https://github.com/")
+    +account("twitter", "https://twitter.com/")
+    +account("matrix", "https://matrix.to/#/")

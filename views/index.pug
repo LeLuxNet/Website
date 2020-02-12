@@ -1,47 +1,46 @@
 extend layout
 block pre-content
   header
-    h1 LeLuxNet
+    h1.monospace LeLuxNet
 block content
-  div(style="text-align:center;")
-    h2 Welcome to the LeLuxNet Website
-    p LeLuxNet is a small group of programmers.
-    | We publish some software. Which software? Look in the
-    |
-    a(href="#projects") projects
-    |
-    | section below.
-    section(id="projects")
-      h3 Our projects
-      section
-        p: a(href="https://numero.lelux.net") Numero
-        p Get information about numbers with Numero
-      section
-        p: a(href="https://github.com/leluxnet/shelly") Shelly
-        p The cross-platform shell
+  h2 Welcome to the LeLuxNet Website
+  p LeLuxNet is a small group of programmers.
+  | We publish some software. Which software? Look in the
+  |
+  a(href="#projects") projects
+  |
+  | section below.
+  section#projects
+    h3 Our projects
     section
-      h3 Stuff that we host
-      section
-        p 
-        | The decentralised chat-protocol
-        |
-        a(href="https://matrix.lelux.net/") Matrix
-      section
-        p
-        | The free-and-easy-to-use, safe password manager
-        |
-        a(href="https://bitwarden.lelux.net") Bitwarden
+      p: a(href="https://numero.lelux.net") Numero
+      p Get information about numbers with Numero
     section
-      h3 Do you need help?
+      p: a(href="https://github.com/leluxnet/shelly") Shelly
+      p The cross-platform shell
+  section
+    h3 Stuff that we host
+    section
+      p 
+      | The decentralised chat-protocol
+      |
+      a(href="https://matrix.lelux.net/") Matrix
+    section
       p
-      | Just join our 
-      a(href="https://matrix.org/") Matrix
+      | The free-and-easy-to-use, safe password manager
       |
-      | support room
-      |
-      a(href="https://matrix.to/#/#support:lelux.net") #support:lelux.net
-      |
-      | or read our
-      |
-      a(href="https://wiki.lelux.net/") Wiki
-      |.
+      a(href="https://bitwarden.lelux.net") Bitwarden
+  section
+    h3 Do you need help?
+    p
+    | Just join our 
+    a(href="https://matrix.org/") Matrix
+    |
+    | support room
+    |
+    a(href="https://matrix.to/#/#support:lelux.net") #support:lelux.net
+    |
+    | or read our
+    |
+    a(href="https://wiki.lelux.net/") Wiki
+    |.

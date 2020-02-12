@@ -6,10 +6,17 @@ html
     block scripts
     block stylesheets
       link(rel='stylesheet', href='/style.css')
+      link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet")
   body
     block pre-content
     main
       block content
     footer
       block footer
-        p &copy;&nbsp;2020 LeLuxNet. For stuff like the impress please reach out to info@lelux.net
+        p
+        | ©
+        |
+        span.monospace LeLuxNet
+        |
+        a(href="imprint") Imprint
